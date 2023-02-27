@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  background-color: #FEE600;
+}
+
+.AppHeader {
+  font-weight: bold;
+  height: 90px;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  color: #FEE600;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-wrap: wrap;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.AppBody {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.giantWords{
+  font-size: 130px;  
+}
+
+.bigWords{
+  font-size: 60px;  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  font-size: 25px;
+  font-weight: bold;
+  background: #FEE600;
+  border:none;
+  border-bottom:1px solid black;
+  text-align: left;
+}
+
+.formField {
+  margin: 10px 0 10px 0;
+  min-width: 500px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1;
+  font-family: "Titillium Web", sans-serif;
+}
+.formButton {
+  border: 1px solid;
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnside {
+  text-align: left;
+  width: 25%;
+  float: left;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.columnmiddle {
+  text-align: center;
+  width: 70%;
+  float: left;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.table{
+  border:1px solid black;
+  text-align: center;
+  width: 100%;
+}
+
+.table.th{
+  border:1px solid black;
+  text-align: center;
+  width: 100%;  
+}
+
+.table.thead{
+  border:1px solid black;
+  text-align: center;
+  width: 100%;  
+}
+
+.button{
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 35px;
+  font-family: "Titillium Web", sans-serif;
+  background-color: black;
+  color: #FEE600;  
+}
+
+
