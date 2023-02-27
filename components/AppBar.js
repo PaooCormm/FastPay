@@ -4,7 +4,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui"
 export const AppBar = () => {
   return (
     <div className={styles.AppHeader}>
-      <span>FastPay</span>  
+      <span>EtherSwipe</span>  
       <WalletMultiButton />
     </div>
   )

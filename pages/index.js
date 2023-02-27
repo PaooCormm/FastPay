@@ -9,7 +9,7 @@ const Home = props => {
   return (
     <div className={styles.App}>
       <Head>
-        <title>FastPay</title>
+        <title>EtherSwipe</title>
       </Head>
       <WalletContextProvider>
         <AppBar />

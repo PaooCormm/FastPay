@@ -5,6 +5,12 @@ import * as web3 from "@solana/web3.js"
 import { useEffect, useState } from "react"
 
 export const PagoEmpleado = () => {
+
+  const link = () => {
+    return txSig ? `https://explorer.solana.com/tx/${txSig}?cluster=devnet` : ""
+  }
+  
+  const [txSig, setTxSig] = useState("")
   const [balance, setBalance] = useState(0)
   const { connection } = useConnection()
   const { publicKey, sendTransaction } = useWallet()
@@ -26,7 +32,10 @@ export const PagoEmpleado = () => {
       var variable=llaves[j].toString()
       console.log(variable);
       
-      const recipientPubKey = new web3.PublicKey(event.target.texto+j.value)
+      var x=Math.floor(VB,-2)
+      console.log("VB " +  VB)
+      console.log("x " + x)
+      const recipientPubKey = new web3.PublicKey(variable)
 
       const sendSolInstruction = web3.SystemProgram.transfer({
         fromPubkey: publicKey,
@@ -105,10 +114,13 @@ input.addEventListener("input", () => {
     row.appendChild(numCell);
     row.appendChild(textCell);
     VB=balance/LAMPORTS_PER_SOL / valor;
+    VB=VB-VB*.10
     document.getElementById("VB").innerHTML=VB;
     
   }
 });
+
+
 
 }
 
@@ -128,7 +140,8 @@ else{console.log("Nope");}
                 <p>Balance repartido por n° personas: </p><p id="VB">{publicKey? ` ${VB}`:""}</p>
             </div>
             <div className={styles.columnmiddle}>
-                <input className={styles.input} type="number" id="personas" min="1" max="20" placeholder="Eg. 2" required  ></input>
+                <p>No. de empleados  <input className={styles.input} type="number" id="personas" min="1" max="20" placeholder="Eg. 2" required  ></input></p>
+                
                 <br></br>
                 <table id="tabla" className={styles.table}>
                     <thead className={styles.thead}>

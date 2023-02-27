@@ -30,7 +30,7 @@ export const SendSolForm = () => {
         <div>
         </div>    
       ) : (
-        <><center><br></br><span className={styles.giantWords}>Bienvenido a FastPay</span><br></br><span className={styles.bigWords}>Conecta tu cartera para continuar</span></center></>
+        <><center><br></br><span className={styles.giantWords}>Bienvenido a EtherSwipe</span><br></br><span className={styles.bigWords}>Conecta tu cartera para continuar</span></center></>
       )}
       {txSig ? (
         <div>          

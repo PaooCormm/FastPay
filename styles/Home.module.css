@@ -59,7 +59,7 @@
   background: #FEE600;
   border:none;
   border-bottom:1px solid black;
-  text-align: left;
+  text-align: right;
 }
 
 .formField {
@@ -107,19 +107,16 @@
 }
 
 .table{
-  border:1px solid black;
   text-align: center;
   width: 100%;
 }
 
 .table.th{
-  border:1px solid black;
   text-align: center;
   width: 100%;  
 }
 
 .table.thead{
-  border:1px solid black;
   text-align: center;
   width: 100%;  
 }
